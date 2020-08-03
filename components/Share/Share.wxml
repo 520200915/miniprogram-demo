@@ -1,0 +1,24 @@
+<view class='share-box' catchtouchmove='noScroll' wx:if='{{show}}'>
+	<view class='bg' bindtap='cancel'></view>
+	<view class='info {{flag?"flag":""}}' style="top:{{viewTop}}px;">
+    <slot></slot>
+	</view>
+	<view class='choose-list' style="height:{{hideCancel?'auto':'298rpx'}}">
+		<view class='list'>
+			<view class='list-btn' wx:if='{{!hideWx}}'>
+				<image src='images/wx.png' class='image'></image>
+				<view>微信好友</view>
+				<button open-type='share' bindtap='cancel'></button>
+			</view>
+			<view class='list-btn' bindtap='save'>
+				<image src='images/share.png' class='image'></image>
+				<view>保存分享</view>
+			</view>
+		</view>
+		<view wx:if='{{!hideCancel}}' class='cancel' bindtap='cancel'>取消</view>
+	</view>
+</view>
+
+<view class='canvas' style="width:{{width}}px;height:{{height}}px">
+	<canvas canvas-id='img' style='width:100%;height:100%;'></canvas>
+</view>

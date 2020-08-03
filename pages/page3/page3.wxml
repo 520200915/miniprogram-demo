@@ -1,0 +1,7 @@
+<view bindtap='back'>返回到page页面</view>
+
+<view bindtap="share">分享</view>
+
+<share show='{{showShare}}' bindhide='hideShare' imgInfo='{{canvasData.canvasInfo}}' canvasData='{{canvasData}}' canvasDraw='{{draw}}' bindinit='init'>
+
+</share>

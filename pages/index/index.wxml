@@ -1,0 +1,6 @@
+<view bindtap='jump' data-url='page2' data-index='0' data-item='{{page2Obj}}'>跳转到page2</view>
+<view bindtap="jump" data-url='tabIndex.index'>跳转到tab首页</view>
+<view bindtap="jump" data-url='tabSecond.index'>跳转到tab第二页</view>
+
+<view wx:if='{{show}}'>page2改变的</view>
+<view wx:if='{{show3}}'>page3改变的</view>

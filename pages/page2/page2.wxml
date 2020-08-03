@@ -1,0 +1,2 @@
+<view bindtap='back'>返回上一页，改变数据或调用方法</view>
+<view bindtap="jump">跳到第三页</view>
